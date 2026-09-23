@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Buy Here Pay Here Newark | Same Day Car Approval in Newark, NJ</title>
+<meta name="description" content="Buy Here Pay Here Newark offers in-house auto financing with same day car approval. No bank financing needed — all credit welcome. Visit us at 756-762 Broad St, Newark, NJ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f1b2d;
+    --navy-2:#16283f;
+    --steel:#22415e;
+    --amber:#e8a33d;
+    --amber-dark:#c9822a;
+    --cream:#f7f4ee;
+    --ink:#1a1f26;
+    --muted:#5b6774;
+    --line:#e2ddd2;
+    --radius:10px;
+    --maxw:1140px;
+    box-sizing:border-box;
+  }
+  *,*::before,*::after{box-sizing:inherit;}
+  html{scroll-behavior:smooth; scroll-padding-top:88px;}
+  body{
+    margin:0;
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.eyebrow-font{font-family:'Oswald',system-ui,sans-serif; letter-spacing:.01em; margin:0;}
+  h2{font-size:clamp(1.7rem,3.5vw,2.4rem); font-weight:600; color:var(--navy);}
+  h3{font-size:1.15rem; font-weight:600; color:var(--navy);}
+  p{margin:0 0 1rem;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  section{padding:72px 0;}
+  .section-head{max-width:620px; margin-bottom:40px;}
+  .kicker{
+    display:inline-block;
+    color:var(--amber-dark);
+    font-weight:600;
+    font-size:.85rem;
+    margin-bottom:10px;
+  }
+  .lede{color:var(--muted); font-size:1.05rem;}
+
+  /* Header */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(15,27,45,.96);
+    backdrop-filter:saturate(140%) blur(6px);
+    color:#fff;
+    padding: env(safe-area-inset-top,0px) 0 0;
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px;
+    max-width:var(--maxw); margin:0 auto;
+    gap:16px;
+  }
+  .brand{display:flex; flex-direction:column; line-height:1.15;}
+  .brand-name{font-family:'Oswald'; font-weight:700; font-size:1.25rem; color:#fff;}
+  .brand-loc{font-size:.78rem; color:#b9c3cf;}
+  nav.links{display:flex; gap:26px; font-size:.92rem; font-weight:500;}
+  nav.links a{text-decoration:none; color:#dbe2ea; transition:color .15s;}
+  nav.links a:hover{color:var(--amber);}
+  .nav-cta{
+    background:var(--amber); color:var(--navy); font-weight:700;
+    padding:10px 18px; border-radius:6px; text-decoration:none; font-size:.9rem;
+    white-space:nowrap;
+  }
+  .menu-btn{display:none; background:none; border:1px solid #3a4c60; color:#fff; padding:8px 10px; border-radius:6px;}
+
+  /* Hero */
+  .hero{
+    position:relative;
+    background:linear-gradient(120deg,var(--navy) 45%,var(--steel) 100%);
+    color:#fff;
+    overflow:hidden;
+    padding:64px 0 0;
+  }
+  .hero .wrap{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:40px;
+  }
+  .hero-copy .kicker{color:var(--amber);}
+  .hero h1{
+    font-size:clamp(2.1rem,4.4vw,3.1rem);
+    font-weight:700;
+    color:#fff;
+    margin-bottom:18px;
+  }
+  .hero h1 span{color:var(--amber);}
+  .hero p.lede{color:#c7d0da; max-width:520px;}
+  .hero-actions{display:flex; gap:14px; flex-wrap:wrap; margin-top:26px;}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    padding:14px 24px; border-radius:6px; font-weight:600; text-decoration:none;
+    font-size:.95rem; border:1px solid transparent; cursor:pointer;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--amber); color:var(--navy);}
+  .btn-primary:hover{background:var(--amber-dark);}
+  .btn-outline{border-color:#4a5c70; color:#fff;}
+  .btn-outline:hover{background:rgba(255,255,255,.08);}
+  .hero-stats{display:flex; gap:28px; margin-top:38px; flex-wrap:wrap;}
+  .stat b{display:block; font-family:'Oswald'; font-size:1.5rem; color:var(--amber);}
+  .stat span{font-size:.82rem; color:#b9c3cf;}
+  .hero-media{
+    position:relative;
+    border-radius:var(--radius);
+    overflow:hidden;
+    aspect-ratio:4/5;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.55);
+  }
+  .hero-media img{width:100%; height:100%; object-fit:cover;}
+  .hero-badge{
+    position:absolute; left:18px; bottom:18px;
+    background:rgba(15,27,45,.88);
+    color:#fff; padding:12px 16px; border-radius:8px;
+    font-size:.85rem; display:flex; align-items:center; gap:10px;
+    border:1px solid rgba(255,255,255,.12);
+  }
+  .hero-badge b{color:var(--amber); font-family:'Oswald'; font-size:1.1rem;}
+
+  /* Services */
+  .services{background:#ffffff;}
+  .service-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .service-card{
+    background:#ffffff !important; border:1px solid var(--line); border-radius:var(--radius);
+    padding:26px 24px;
+  }
+  .service-card h3{color:var(--navy) !important;}
+  .service-card .ico{
+    width:44px; height:44px; border-radius:8px;
+    background:var(--navy); color:var(--amber);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Oswald'; font-weight:600; margin-bottom:16px; font-size:1.05rem;
+  }
+  .service-card p{color:var(--muted); font-size:.94rem; margin:0;}
+
+  /* Why choose us */
+  .why{background:var(--navy); color:#fff;}
+  .why .kicker{color:var(--amber);}
+  .why h2{color:#fff;}
+  .why .lede{color:#c7d0da;}
+  .why-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:18px 32px; margin-top:12px;
+  }
+  .why-item{display:flex; gap:14px; align-items:flex-start;}
+  .why-item .mark{
+    flex:none; width:30px; height:30px; border-radius:50%;
+    background:var(--amber); color:var(--navy);
+    display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.9rem;
+  }
+  .why-item h3{color:#fff; font-size:1rem; margin-bottom:4px;}
+  .why-item p{color:#b9c3cf; font-size:.9rem; margin:0;}
+
+  /* About */
+  .about{background:#ffffff;}
+  .about .wrap{
+    display:grid; grid-template-columns:.95fr 1.05fr; gap:44px; align-items:center;
+  }
+  .about-media{border-radius:var(--radius); overflow:hidden;}
+  .about-media img{width:100%; height:100%; object-fit:cover;}
+  .about-copy p{color:var(--muted);}
+  .keyword-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:18px;}
+  .chip{
+    background:#fff; border:1px solid var(--line); color:var(--navy);
+    font-size:.78rem; padding:6px 12px; border-radius:100px;
+  }
+
+  /* FAQ */
+  .faq{background:#ffffff;}
+  .faq-list{border-top:1px solid var(--line);}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-item summary{
+    list-style:none; cursor:pointer;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 4px; font-family:'Oswald'; font-weight:500; font-size:1.02rem;
+    color:var(--navy);
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .plus{
+    font-size:1.4rem; color:var(--amber-dark); transition:transform .2s; flex:none; margin-left:16px;
+  }
+  .faq-item[open] summary .plus{transform:rotate(45deg);}
+  .faq-item .a{padding:0 4px 20px; color:var(--muted); max-width:70ch;}
+
+  /* Contact */
+  .contact{background:var(--cream);}
+  .contact .wrap{display:grid; grid-template-columns:.9fr 1.1fr; gap:36px; align-items:stretch;}
+  .contact-card{
+    background:var(--navy); color:#fff; border-radius:var(--radius);
+    padding:32px; display:flex; flex-direction:column; gap:20px;
+  }
+  .contact-card h2{color:#fff;}
+  .info-row{display:flex; gap:14px; align-items:flex-start; font-size:.95rem;}
+  .info-row .lbl{color:var(--amber); font-weight:600; font-family:'Oswald'; min-width:82px;}
+  .info-row a{color:#e6ebf0; text-decoration:none;}
+  .info-row a:hover{color:var(--amber);}
+  .map-wrap{border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); min-height:340px;}
+  .map-wrap iframe{width:100%; height:100%; min-height:340px; border:0; display:block;}
+
+  /* Footer */
+  footer{background:var(--navy-2); color:#9fadbb; padding:26px 0; font-size:.85rem;}
+  footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  footer a{color:#c7d0da; text-decoration:none;}
+
+  @media (max-width:880px){
+    nav.links{display:none;}
+    .menu-btn{display:inline-flex;}
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero-media{order:-1; aspect-ratio:16/10;}
+    .service-grid{grid-template-columns:1fr 1fr;}
+    .why-grid{grid-template-columns:1fr;}
+    .about .wrap{grid-template-columns:1fr;}
+    .contact .wrap{grid-template-columns:1fr;}
+  }
+  @media (max-width:520px){
+    section{padding:52px 0;}
+    .service-grid{grid-template-columns:1fr;}
+    .hero-stats{gap:20px;}
+  }
+
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --cream:#12181f;
+      --ink:#e7ebef;
+      --muted:#a3adb6;
+      --line:#26303a;
+    }
+    :root:not([data-theme="light"]) .chip{background:#161d25; color:#e7ebef;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span class="brand-name">Buy Here Pay Here Newark</span>
+      <span class="brand-loc">Newark, NJ · In-House Auto Financing</span>
+    </div>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="tel:8622291685">Call 862-229-1685</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="kicker">Newark, New Jersey · BHPH Dealership</span>
+      <h1>Get <span>Same Day Car Approval</span> — no bank, no hassle</h1>
+      <p class="lede">Buy Here Pay Here Newark puts you behind the wheel with on-site auto approval and in-house financing. All credit welcome — good, bad, or building.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Get Approved Today</a>
+        <a class="btn btn-outline" href="tel:8622291685">862-229-1685</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>Same Day</b><span>Approval on-site</span></div>
+        <div class="stat"><b>All Credit</b><span>Welcome, every time</span></div>
+        <div class="stat"><b>Direct</b><span>In-house financing</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="https://img.magnific.com/free-photo/handsome-man-showing-thumb-up-while-buying-car-salon_7502-9630.jpg?ga=GA1.1.1410965903.1789925583&semt=ais_hybrid&w=740&q=80" alt="Customer approved for a car at Buy Here Pay Here Newark">
+      <div class="hero-badge">✓ <b>Approved</b> on the spot — no bank required</div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Our Services</span>
+      <h2>Everything you need, under one roof</h2>
+      <p class="lede">From picking a car to driving it home, our team handles financing directly — so there's no waiting on outside banks or lenders.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="ico">01</div>
+        <h3>Buy Here Pay Here Financing</h3>
+        <p>We finance the car and the loan right here at our Newark lot, so approval decisions happen fast and in person.</p>
+      </div>
+      <div class="service-card">
+        <div class="ico">02</div>
+        <h3>Same Day Car Approval</h3>
+        <p>Walk in, pick a vehicle, and leave with a decision the same day — no long waits, no runaround.</p>
+      </div>
+      <div class="service-card">
+        <div class="ico">03</div>
+        <h3>No Bank Financing Needed</h3>
+        <p>Skip the outside lender entirely. Our direct, in-house financing means we make the call, not a bank.</p>
+      </div>
+      <div class="service-card">
+        <div class="ico">04</div>
+        <h3>Credit Rebuilding Programs</h3>
+        <p>Flexible car payments structured to help you rebuild credit while driving a reliable, quality used vehicle.</p>
+      </div>
+      <div class="service-card">
+        <div class="ico">05</div>
+        <h3>Quality Used Car Inventory</h3>
+        <p>A hand-picked lot of dependable used cars, inspected and priced with affordable car deals in mind.</p>
+      </div>
+      <div class="service-card">
+        <div class="ico">06</div>
+        <h3>Bilingual Customer Service</h3>
+        <p>Our Spanish speaking team walks every customer through financing terms clearly, in the language they're comfortable with.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Why Choose Us</span>
+      <h2>Why Choose Buy Here Pay Here Newark?</h2>
+      <p class="lede">We built this dealership around one idea: getting approved for a car shouldn't be complicated, slow, or dependent on a stranger at a bank.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="mark">✓</div>
+        <div>
+          <h3>Same day car approval</h3>
+          <p>Most customers know where they stand before they leave the lot — no multi-day waiting game.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="mark">✓</div>
+        <div>
+          <h3>All credit welcome</h3>
+          <p>Bad credit, no credit, or recovering credit — our in-house financing looks at your full picture, not just a score.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="mark">✓</div>
+        <div>
+          <h3>Direct, guaranteed financing</h3>
+          <p>Since we finance in-house, there's no third-party bank that can deny you after you've already picked a car.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="mark">✓</div>
+        <div>
+          <h3>Flexible payment plans</h3>
+          <p>Payment schedules built around what actually works for your budget, not a rigid one-size-fits-all term.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="mark">✓</div>
+        <div>
+          <h3>Family-owned dealership</h3>
+          <p>A local, family-run team in Newark that treats every customer like a neighbor, not a number.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="mark">✓</div>
+        <div>
+          <h3>Spanish speaking staff</h3>
+          <p>Clear, honest conversations about financing in the language you're most comfortable with.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-media">
+      <img src="https://img.magnific.com/free-photo/woman-signing-contract-with-her-partner_329181-20015.jpg?ga=GA1.1.1410965903.1789925583&semt=ais_hybrid&w=740&q=80" alt="Customers signing a car financing agreement at Buy Here Pay Here Newark">
+    </div>
+    <div class="about-copy">
+      <span class="kicker">About Us</span>
+      <h2>About Our Buy Here Pay Here Newark</h2>
+      <p>Located at 756-762 Broad St in Newark, NJ, Buy Here Pay Here Newark is a family dealership built around one goal: helping real people get into a reliable car, regardless of their credit history.</p>
+      <p>As a true BHPH dealership, we handle the sale and the financing ourselves — no outside bank, no cold call center. That means faster decisions, honest terms, and a team that's here to answer your questions in person, in English or Spanish.</p>
+      <p>Whether you're rebuilding credit or simply want a quicker path to approval, our on-site auto approval process is designed to get you a fair deal on a quality used car, the same day you walk in.</p>
+      <div class="keyword-row">
+        <span class="chip">Same Day Car Approval</span>
+        <span class="chip">No Bank Financing</span>
+        <span class="chip">All Credit Welcome</span>
+        <span class="chip">Quality Used Cars</span>
+        <span class="chip">Flexible Car Payments</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">FAQ</span>
+      <h2>Questions Newark drivers ask us most</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>What does "Same Day Car Approval" actually mean?<span class="plus">+</span></summary>
+        <div class="a">It means you can walk in, choose a vehicle, and get a financing decision from us directly the same day — without waiting on a bank to review your application.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I get approved with bad credit or no credit?<span class="plus">+</span></summary>
+        <div class="a">Yes. As a Buy Here Pay Here dealership, we finance in-house and welcome all credit situations, including bad credit, no credit, or past repossessions.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need to go through a bank to get financed?<span class="plus">+</span></summary>
+        <div class="a">No. Our no bank financing model means the dealership itself is the lender, so approval doesn't depend on outside bank criteria.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What documents do I need to apply?<span class="plus">+</span></summary>
+        <div class="a">Generally a valid driver's license, proof of income, and proof of residence. Our team will confirm exactly what's needed for your situation when you call or visit.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is your team able to help Spanish-speaking customers?<span class="plus">+</span></summary>
+        <div class="a">Yes, we have Spanish speaking staff on-site to walk you through every step of the car buying and financing process.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <span class="kicker">Contact Information</span>
+      <h2>Visit or call us today</h2>
+      <div class="info-row">
+        <span class="lbl">Address</span>
+        <span>756-762 Broad St, Ste 760<br>Newark, NJ 07102</span>
+      </div>
+      <div class="info-row">
+        <span class="lbl">Phone</span>
+        <a href="tel:8622291685">862-229-1685</a>
+      </div>
+      <div class="info-row">
+        <span class="lbl">Website</span>
+        <a href="https://www.ogmpayhere.com/" target="_blank" rel="noopener">ogmpayhere.com</a>
+      </div>
+      <div class="info-row">
+        <span class="lbl">Google</span>
+        <a href="https://www.google.com/maps?cid=16247088067096141790" target="_blank" rel="noopener">View on Google Maps</a>
+      </div>
+      <a class="btn btn-primary" href="tel:8622291685" style="margin-top:8px;">Call for Same Day Approval</a>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.177095394466!2d-74.1711979!3d40.7362659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2539ce7124bdb%3A0xe179408429c0dfde!2sBuy%20Here%20Pay%20Here%20Newark!5e1!3m2!1sen!2s!4v1790143276375!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Buy Here Pay Here Newark location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Buy Here Pay Here Newark. All rights reserved.</span>
+    <span><a href="https://www.ogmpayhere.com/" target="_blank" rel="noopener">ogmpayhere.com</a> · Newark, NJ</span>
+  </div>
+</footer>
+
+</body>
+</html>
